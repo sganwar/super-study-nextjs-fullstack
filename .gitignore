@@ -1,5 +1,80 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# mannual entries
+/src/assets/images/additional
+/public/additional
+
+
+# =====================================
+# Node
+# =====================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# =====================================
+# Build output
+# =====================================
+.next/
+out/
+dist/
+build/
+.cache/
+.vercel/
+.vscode/
+
+
+# =====================================
+# System files
+# =====================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# =====================================
+# TypeScript
+# =====================================
+*.tsbuildinfo
+
+# =====================================
+# Logs
+# =====================================
+logs/
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# =====================================
+# Coverage & testing
+# =====================================
+coverage/
+*.lcov
+
+# =====================================
+# IDE / Editor
+# =====================================
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# =====================================
+# Misc
+# =====================================
+# Optional: ignore compiled CSS if using SASS or PostCSS output dirs
+*.css.map
+*.scssc
+
+# Optional: ignore public uploads if any
+public/uploads/
+
+
+
 # dependencies
 /node_modules
 /.pnp
