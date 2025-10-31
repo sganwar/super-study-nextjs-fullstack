@@ -102,3 +102,10 @@ a {
   position: relative;
   overflow: hidden;
 }
+
+.scroll-lock {
+    /* Target the HTML element, which is often the main scroll container */
+    overflow: hidden !important; 
+    /* Target the body for cross-browser support */
+    height: 100vh; /* Optional: ensures body takes full viewport height */
+}

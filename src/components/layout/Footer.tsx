@@ -8,6 +8,8 @@ import {
   YouTube 
 } from '@mui/icons-material';
 
+const appVersion = process.env.NEXT_PUBLIC_APP_VERSION;
+
 // Tailwind color constants matching the Super Study dark mode theme
 const EDU_ACCENT_COLOR = 'rgb(96, 165, 250)'; // blue-400
 const EDU_BACKGROUND_COLOR = 'rgb(17, 24, 39)'; // gray-900
@@ -41,7 +43,7 @@ const Footer: React.FC = () => {
     <Box className="flex gap-4">
       <IconButton 
         size="large" 
-        className="hover:!bg-gray-700 !bg-[#E1306C]/60 !text-white transform hover:scale-110 transition-transform" 
+        className="hover:!bg-gray-700 bg-gradient-to-tr from-yellow-400 via-[#e1306c] to-[#405de6] !text-white transform hover:scale-110 transition-transform" 
         href="https://www.instagram.com/"
         target="_blank"
       >
@@ -162,13 +164,17 @@ const Footer: React.FC = () => {
 </Box>
 
         {/* 4. Bottom Bar (Copyright) */}
-        <Box className="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <Box className="border-t border-gray-700 mt-2 md:mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-2">
           <Typography variant="body2" className="text-gray-400">
-            © 2025 Super Study. All rights reserved.
+            <span className="text-xl align-middle">©</span> 2025 Super Study. All rights reserved.
           </Typography>
           
-          <Typography variant="body2" className="text-gray-400 text-center">
+          <Typography variant="body2" className="text-gray-400">
             Designed for Accessible Education
+          </Typography>
+
+          <Typography variant="body2" className="text-gray-400">
+            Version: {appVersion}
           </Typography>
         </Box>
       </Container>
