@@ -1,6 +1,7 @@
 // src/app/about/page.tsx
 
 import React from 'react';
+import type { Metadata } from 'next';
 import {
   Container,
   Typography,
@@ -15,6 +16,42 @@ import {
   School as BagIcon,
 } from '@mui/icons-material';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  // 1. PRIMARY METADATA (For SEO / Google Search Results)
+  title: 'About Super Study - Our Mission & Impact Story',
+  description: 'Learn about Super Study mission to provide educational kits to underprivileged students. Our impact, team, and vision for equal education opportunities.',
+  alternates: {
+    canonical: 'https://www.superstudy.co.in/about',
+  },
+
+  // 2. OPEN GRAPH METADATA (For Facebook, LinkedIn, WhatsApp)
+  openGraph: {
+    title: 'About Super Study - Education Equality Mission',
+    description: 'Discover how Super Study provides educational kits to rural students. 500+ kits distributed, 50+ schools covered across Karnataka.',
+    url: 'https://www.superstudy.co.in/about',
+    siteName: 'Super Study',
+    type: 'website',
+    images: [
+      {
+        url: 'https://www.superstudy.co.in/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Super Study About Us - Education For All Mission',
+      },
+    ],
+  },
+
+  // 3. TWITTER CARD METADATA (For X/Twitter)
+  twitter: {
+    card: 'summary_large_image',
+    site: '@superstudy',
+    creator: '@superstudy',
+    title: 'About Super Study - Our Education Mission',
+    description: 'Learn about our journey providing educational kits to underprivileged students across India.',
+    images: ['https://www.superstudy.co.in/logo.png'],
+  },
+}
 
 // --- DATA DEFINITIONS (UNCHANGED) ---
 const kitItems = [
