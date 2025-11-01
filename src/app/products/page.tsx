@@ -1,19 +1,19 @@
 import type { Metadata } from 'next';
 import ProductsClientView from './ProductsClientView';
 
-export const metadata: Metadata = {
+export const metadata:Metadata = {
   // 1. PRIMARY METADATA (For SEO / Google Search Results)
-  title: 'Contact Super Study - Support & Donation Queries',
-  description: 'Get in touch with Super Study team. Email: supergoldapp@gmail.com, Helpline: +91 74838 94715. Support for donations, refunds, and educational kit queries.',
+  title: 'Our Educational Apps & Products - Super Study',
+  description: 'Explore Super Study educational apps: Super Intelligent App for learning and Super Gold App for financial education. Download from Play Store.',
   alternates: {
-    canonical: 'https://www.superstudy.co.in/contact',
+    canonical: 'https://www.superstudy.co.in/products',
   },
 
   // 2. OPEN GRAPH METADATA (For Facebook, LinkedIn, WhatsApp)
   openGraph: {
-    title: 'Contact Super Study - Support & Help',
-    description: 'Reach Super Study for donation support, refund requests, and educational kit queries. Email and phone support available.',
-    url: 'https://www.superstudy.co.in/contact',
+    title: 'Super Study Apps - Educational Mobile Applications',
+    description: 'Download our educational apps: Super Intelligent App for comprehensive learning and Super Gold App for financial literacy education.',
+    url: 'https://www.superstudy.co.in/products',
     siteName: 'Super Study',
     type: 'website',
     images: [
@@ -21,19 +21,9 @@ export const metadata: Metadata = {
         url: 'https://www.superstudy.co.in/logo.png',
         width: 1200,
         height: 630,
-        alt: 'Contact Super Study - Educational Kits Support',
+        alt: 'Super Study Educational Apps - Super Intelligent & Super Gold Apps',
       },
     ],
-  },
-
-  // 3. TWITTER CARD METADATA (For X/Twitter)
-  twitter: {
-    card: 'summary_large_image',
-    site: '@superstudy',
-    creator: '@superstudy',
-    title: 'Contact Super Study Support Team',
-    description: 'Get help with donations, refunds, and educational kit deliveries. Multiple support channels available.',
-    images: ['https://www.superstudy.co.in/logo.png'],
   },
 }
 
