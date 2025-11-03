@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 
 export default function ContactUs() {
   return (
-    <Box className="min-h-screen bg-white py-16">
+    <Box className="min-h-screen bg-edu-light/50 py-16">
       <Container maxWidth="lg">
         <Typography 
           variant="h3" 

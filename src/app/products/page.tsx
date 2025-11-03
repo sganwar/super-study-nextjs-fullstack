@@ -4,7 +4,7 @@ import ProductsClientView from './ProductsClientView';
 export const metadata:Metadata = {
   // 1. PRIMARY METADATA (For SEO / Google Search Results)
   title: 'Our Educational Apps & Products - Super Study',
-  description: 'Explore Super Study educational apps: Super Intelligent App for learning and Super Gold App for financial education. Download from Play Store.',
+  description: 'Explore Super Study ed seoucational apps: Super Intelligent App for learning and Super Gold App for financial education. Download from Play Store.',
   alternates: {
     canonical: 'https://www.superstudy.co.in/products',
   },

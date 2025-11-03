@@ -83,8 +83,8 @@ export default function Home() {
     const options = {
       "key": "rzp_live_RJpArHowLAOS2l", // live mode public key
        // "key": "rzp_test_RJp1B7TPct9hmi", //test mode public key
-      // "amount": (calculatePrice(selectedCount) * 100).toString(), // live mode
-       "amount": 100, //test mode
+      "amount": (calculatePrice(selectedCount) * 100).toString(), // live mode
+      //  "amount": 100, //test mode
       "name": "Super Study",
       "image": PUBLIC_LOGO,
       "description": `Donate ${selectedCount} Kit${selectedCount > 1 ? 's' : ''}`,

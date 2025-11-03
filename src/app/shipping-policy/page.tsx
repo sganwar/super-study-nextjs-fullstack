@@ -13,7 +13,7 @@ import { AssignmentTurnedIn as DeliveryIcon, School as SchoolIcon } from '@mui/i
 
 export default function DeliveryPolicy() {
   return (
-    <Box className="min-h-screen bg-white py-16">
+    <Box className="min-h-screen bg-edu-light/50 py-16">
       <Container maxWidth="md">
         <Typography 
           variant="h3" 
